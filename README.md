@@ -1,2 +1,2 @@
-# sf_data_science_python
-sf homework
+# python_learning_pro_base
+There are my homeworks for python course "python_base"&"python_pro" 
