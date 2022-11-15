@@ -22,7 +22,12 @@ print(list[4:1:-1])
 list.append(5)
 list.append("breadgit")
 print(list)
+list.append("cat")
 
 #удаление элемента из списка
 list.remove(23)
+print(list)
+#list.remove("zombie") #попытка удалить то, чего нет в списке. dslftn jib,re "ValueError: list.remove(x): x not in list"
+print(list)
+list.remove("cat") #удаление элемента, который встречается больше раза в списке
 print(list)
