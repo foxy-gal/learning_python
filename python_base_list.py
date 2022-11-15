@@ -37,3 +37,46 @@ if 'груши'in some_random_list:
     some_random_list.remove('груши')
 else:
     print('Груш в списке покупок нет')
+    
+#изменить существующий элемент списка - обратиться по индексу и ввести новое значение
+some_random_list[1] = 23
+print(some_random_list)
+
+#конкатенация списков
+list_of_purchase_wife = ['milk', 'bread', 'butter', 'condoms', 'wheat beer']
+list_of_purchase_husband = ['gum', 'liquor', 'eggs']
+general_purchase_list = list_of_purchase_wife + list_of_purchase_husband
+print(general_purchase_list)
+
+grocery = ['курица', 'яйца', 'молоко', 'бананы', 'вода','бананы','бананы']
+guests_grocery = ['вино','сыр','сок']
+new_grocery = grocery + guests_grocery 
+print(new_grocery)
+
+#сложение элементов списка - функция SUM(), int+float only
+expanses = [100, 500.05, 250, 150]
+print(sum(expanses))
+
+#минимальное значение списка, максимальное - функции MIN() И MAX()
+print(min(expanses))
+print(max(expanses))
+print(min(list_of_purchase_husband))
+print(max(list_of_purchase_husband))
+
+print(grocery.count('бананы'))
+
+'''
+Напишите код, принимающий на вход список transactions, 
+в котором перечислены транзакции за покупки, 
+совершенные пользователем. 
+Задача программы — вывести на экран список из двух элементов. 
+Первый элемент должен содержать количество покупок, а второй — максимальную стоимость покупки.
+'''
+transactions=[700, 800, 1100, 60, 80]
+print(sum(transactions))
+print(max(transactions))
+interesting_metrics = [len(transactions), max(transactions)]
+print(interesting_metrics)
+#сортировка списка
+temp = [20.5, 60, 77.9, 77, 0, 2, 45, 66.66]
+print(sorted(temp))
