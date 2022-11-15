@@ -20,5 +20,9 @@ print(list[4:1:-1])
 
 #Добавить в список новый элемент методом append
 list.append(5)
-list.append("bread")
+list.append("breadgit")
+print(list)
+
+#удаление элемента из списка
+list.remove(23)
 print(list)
