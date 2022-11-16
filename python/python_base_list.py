@@ -80,3 +80,8 @@ print(interesting_metrics)
 #сортировка списка
 temp = [20.5, 60, 77.9, 77, 0, 2, 45, 66.66]
 print(sorted(temp))
+print(sorted(temp, reverse = True))
+temp.sort()
+print(temp)
+temp.sort(reverse=True)
+print(temp)
