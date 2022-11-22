@@ -85,3 +85,31 @@ temp.sort()
 print(temp)
 temp.sort(reverse=True)
 print(temp)
+
+#задача Напишите код, который преобразует список lst так, что вместо строковых элементов будет их длина, вместо остальных элементов — None.
+lst = ['11', 12, 'T', 'bee']
+empty_list = []
+
+#простой цикл
+for element in lst: #element - итератор, переменная в которую на каждую итерацию записывается элемент списка
+    print(element)
+    
+print(element)
+
+# цикл c if else
+for element in lst: #element - итератор, переменная в которую на каждую итерацию записывается элемент списка
+    if type(element) == str:
+        empty_list.append(len(element))
+    else: 
+        empty_list.append(None)
+print(empty_list)
+
+#Необходимо определить самого опытного сотрудника в вашей команде. Напишите код, который выводит на экран список таких сотрудников.
+
+experience = ['Вагнер', 7, 'Лисов', 3, 'Тихомиров', 12]
+new_experience = max(experience[1::2])
+for i, value in enumerate(experience): #enumerate - функция только в цикле для перебора по индексам и по значениям
+    print(i)
+    print(value)
+    if value == new_experience:
+        print(experience[i-1])

@@ -64,3 +64,8 @@ print(ml.symmetric_difference(python))
 
 #короткий способ получить симметричное множество ^
 print(python^ml)
+
+#задача вывести список уникальных элементов 
+fruits = ['яблоко', 'груша', 'яблоко', 'апельсин']
+set_fruits = set(fruits)
+print(len(set_fruits))
