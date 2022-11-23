@@ -69,3 +69,21 @@ print(python^ml)
 fruits = ['яблоко', 'груша', 'яблоко', 'апельсин']
 set_fruits = set(fruits)
 print(len(set_fruits))
+
+# Напишите программу, принимающую на вход список фруктов fruits. 
+# Напишите функцию, которая выведет на экран список уникальных элементов в алфавитном порядке.
+fruits = ['яблоко', 'груша', 'апельсин', 'груша', 'дыня', 'груша']
+set_fruits = set(fruits)
+print(sorted(list(set_fruits)))
+
+
+# Определите, сколько в нем встречается различных чисел.
+numbers = [1,2,4,3,6,8,4,5,9,1]
+print(len(set(numbers)))
+
+string1_set=set('string1')
+print(string1_set)
+
+string2_set=set('string2')
+print(string2_set)
+print(string1_set.intersection(string2_set))

@@ -102,14 +102,5 @@ for element in lst: #element - итератор, переменная в кот�
         empty_list.append(len(element))
     else: 
         empty_list.append(None)
-print(empty_list)
+print(list(empty_list))
 
-#Необходимо определить самого опытного сотрудника в вашей команде. Напишите код, который выводит на экран список таких сотрудников.
-
-experience = ['Вагнер', 7, 'Лисов', 3, 'Тихомиров', 12]
-new_experience = max(experience[1::2])
-for i, value in enumerate(experience): #enumerate - функция только в цикле для перебора по индексам и по значениям
-    print(i)
-    print(value)
-    if value == new_experience:
-        print(experience[i-1])

@@ -1,3 +1,4 @@
+# словарь - ассоциативный словарь
 employees = {'Мария А.': '+7(999)111-11-11', 'Иван И.': '+7(999)222-22-22','Сергей С.': '+7(999)333-33-33'}
 print(employees)
 print(type(employees))
@@ -43,5 +44,25 @@ tenants_dict.pop('Ильичев')
 print(tenants_dict)
 tenants_dict["Котов"] = 14
 print(tenants_dict['Котов'])
-#print(tenants_dict)
+print(tenants_dict)
+
+#вывод перечня ключей словаря
 print(tenants_dict.keys())
+
+
+# словари в словаре
+dict_sample= {
+1: 
+    {'student1': 'Nicholas', 'student2': 'John', 'student3': 'Mercy'}, 
+2:
+    {'course1': 'Computer Science', 'course2': 'Mathematics', 'course3': 'Accounting'}
+}
+# получение значения самого глубокого уровня
+print(dict_sample[1]['student2'])
+
+# добавление нового значения в словарь словаря
+dict_sample[1]['student3'] = 'Tomas'
+print(dict_sample)
+
+dict_sample[1].pop('student1')
+print(dict_sample)
