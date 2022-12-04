@@ -87,3 +87,17 @@ print(string1_set)
 string2_set=set('string2')
 print(string2_set)
 print(string1_set.intersection(string2_set))
+
+# Напишите программу, которая выведет на экран количество уникальных символов,
+# встречающихся в обеих строках.
+s1 = 'abcdabcd'
+s2 = 'cdcdef'
+print(len(set(s1+s2)))
+
+# Другой способ решения (другая интерпретация чего от меня хотят)
+s1 = set(s1)
+s2 = set(s2)
+print(len(s1.intersection(s2)))
+
+import this
+
